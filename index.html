@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Number Line</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Interactive Number Line</h1>
+        <div class="controls">
+            <label for="zoom">Zoom Level:</label>
+            <select id="zoom">
+                <option value="2">2x</option>
+                <option value="3">3x</option>
+                <option value="4">4x</option>
+                <option value="5">5x</option>
+                <option value="6">6x</option>
+                <option value="7">7x</option>
+                <option value="8">8x</option>
+                <option value="9">9x</option>
+                <option value="10">10x</option>
+                <option value="20">20x</option>
+                <option value="30">30x</option>
+                <option value="40">40x</option>
+                <option value="50">50x</option>
+            </select>
+            <button id="reset">Reset Zoom</button>
+            <button id="resetAll">Reset All</button>
+        </div>
+        <canvas id="numberLine"></canvas>
+        <div class="input-section">
+            <input type="text" id="userNumber" placeholder="Enter a fraction or decimal">
+            <button id="addNumber">Add to Line</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
